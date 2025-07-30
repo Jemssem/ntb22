@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>젬쌤의 NTB 꾸준영어챌린지 21기 성취인증표</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            padding: 24px;
+        }
+        .table-container {
+            overflow-x: auto; /* Keep auto in case content is still too wide on very small screens */
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed; /* Important for fixed column widths */
+            min-width: 700px; /* Ensure a minimum width for readability */
+        }
+        th, td {
+            padding: 10px 5px; /* Increased padding slightly */
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 0.85rem; /* Slightly larger font size for general text */
+            word-break: break-all; /* Allow text to break within words */
+        }
+        th {
+            background-color: #edf2f7;
+            font-weight: 600;
+            color: #2d3748;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        td {
+            background-color: #ffffff;
+        }
+        tr:hover td {
+            background-color: #f7fafc;
+        }
+        .status-emoji {
+            font-size: 1.5rem; /* Larger font size for the emojis */
+            line-height: 1; /* Ensure line height doesn't add extra space */
+        }
+        .status-정시 { color: #28a745; font-weight: bold; }
+        .status-지각 { color: #ffc107; font-weight: bold; }
+        .status-미인증 { color: #6c757d; font-weight: bold; }
+        .participant-col {
+            position: sticky;
+            left: 0;
+            background-color: #edf2f7; /* Match header background */
+            z-index: 11; /* Higher than other cells but lower than header */
+            font-weight: 600;
+            color: #2d3748;
+            width: 120px; /* Fixed width for participant column */
+            min-width: 100px; /* Ensure it doesn't get too small */
+            max-width: 150px;
+            text-align: left; /* Align participant names to left */
+            padding-left: 12px;
+        }
+        /* Adjust participant column background on hover for better visual */
+        tr:hover .participant-col {
+            background-color: #e2e8f0;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            th, td {
+                font-size: 0.7rem; /* Adjusted font size for small screens */
+                padding: 8px 3px;
+            }
+            .status-emoji {
+                font-size: 1.2rem; /* Adjusted emoji size for small screens */
+            }
+            .participant-col {
+                width: 90px;
+                min-width: 80px;
+                max-width: 120px;
+                padding-left: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-3xl font-bold text-center mb-6 text-gray-800">젬쌤의 NTB 꾸준영어챌린지 21기</h1>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="participant-col">참가자</th>
+                        <th>07-07</th>
+                        <th>07-08</th>
+                        <th>07-09</th>
+                        <th>07-10</th>
+                        <th>07-11</th>
+                        <th>07-14</th>
+                        <th>07-15</th>
+                        <th>07-16</th>
+                        <th>07-17</th>
+                        <th>07-18</th>
+                        <th>07-21</th>
+                        <th>07-22</th>
+                        <th>07-23</th>
+                        <th>07-24</th>
+                        <th>07-25</th>
+                        <th>07-28</th>
+                        <th>07-29</th>
+                        <th>07-30</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="participant-col">늘겸손</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                    </tr>
+                    <tr>
+                        <td class="participant-col">낙숫물</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                    </tr>
+                    <tr>
+                        <td class="participant-col">여행영어 / 연연</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                    </tr>
+                    <tr>
+                        <td class="participant-col">여행영어/자스민300</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                    </tr>
+                    <tr>
+                        <td class="participant-col">영셸든매운맛1/중급</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                    </tr>
+                    <tr>
+                        <td class="participant-col">영쉘든/쑤기</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                    </tr>
+                    <tr>
+                        <td class="participant-col">영쉘든매운맛1/녹디</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                    </tr>
+                    <tr>
+                        <td class="participant-col">영쉘든순한맛1/망고매니22</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                    </tr>
+                    <tr>
+                        <td class="participant-col">영쉘든순한맛2/신홍</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                    </tr>
+                    <tr>
+                        <td class="participant-col">영어회화/나무처럼</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                    </tr>
+                    <tr>
+                        <td class="participant-col">하티</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                    </tr>
+                    <tr>
+                        <td class="participant-col">해바라기/여행영어</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-지각 status-emoji">🟩</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                        <td class="status-미인증 status-emoji">⬜</td>
+                    </tr>
+                    <tr>
+                        <td class="participant-col">Sunflower8474</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                        <td class="status-정시 status-emoji">✅</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mt-6 text-center text-sm text-gray-600">
+            <p>⬜ 미인증</p>
+            <p>🟩 지각</p>
+            <p>✅ 정시</p>
+        </div>
+    </div>
+</body>
+</html>
